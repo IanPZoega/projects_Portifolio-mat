@@ -22,20 +22,20 @@ body {
     width: 100%;
 }
 
-.background-block > img, .input-wrapper {
+.background-block > img {
     height: 50px;
-    width: 80%;
+    width: 90%;
 }
 
 .select { 
     position: relative;
-    width: 325px;
+    width: 80%;
     margin-top: -50px;
     margin-left: 3px;
     z-index: 1;
 }
 
-.input-wrapper {
+.input-wrapper label {
     position: relative;
     width: 100%;
 }
@@ -44,29 +44,30 @@ body {
     position: absolute;
     left: 8px;
     top: 32%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    transform: translateY(-30%);
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
 }
 
 .select-input {
-    width: 100%;
-    padding: 8px 8px 8px 32px;
+    width: 80%;
+    padding: 8px 8px 10px 38px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     background: none;
     color: white;
+    outline: none;
 }
 
-.select-input::placeholder {
+.select-input::placeholder, .options-list > li, .select-input > li {
     font-size: 1.1em;
 }
 
 .options-list {
     display: none;
     position: absolute;
-    width: 100%;
+    width: 60%;
     background: #1E1E1E;
     color: white;
     list-style: none;
@@ -92,16 +93,16 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+    width: 100vw;
+} 
 
 iframe {
-    width: 80%;
-    height: 60vh;
+    width: 90%;
+    height: 50%;
 }
 
 .content { 
     position: absolute;
-    width: 325px;
     bottom: 0;
     margin-left: 15px;
     z-index: 1;
@@ -117,4 +118,41 @@ iframe {
 #last-block {
     position: fixed;
     bottom: 0;
+}
+
+/* Celular */
+@media only screen and (min-width: 400px) {
+    .background-block, .select {
+        width: 70%;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 500px) {
+    .background-block, .select {
+        width: 50%;
+    }
+
+    iframe {
+        height: 70%;
+        max-width: 800px;
+    }
+}
+
+/* PC */
+@media only screen and (min-width: 992px) {
+    .background-block, .select {
+        width: 30%;
+    }
+}
+
+/* TV */
+@media only screen and (min-width: 1200px) {
+    .background-block, .select {
+        width: 20%;
+    }
+
+    iframe {
+        max-width: 1000px;
+    }
 }
