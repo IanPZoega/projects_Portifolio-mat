@@ -99,6 +99,7 @@ main {
 
 iframe {
     visibility: hidden;
+    opacity: 0;
     width: 90%;
     height: 50%;
     transition: width .3s, height .3s;
