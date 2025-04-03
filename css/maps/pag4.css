@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../../img/sislinear.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
