@@ -31,12 +31,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Mapeia cada opção para sua página correspondente
     const pageMap = {
-        "op1": "pag1.html",
-        "op2": "pag2.html",
-        "op3": "pag3.html",
-        "op4": "pag4.html",
-        "op5": "pag5.html",
-        "op6": "pag6.html"
+        "op1": "html/pag1.html",
+        "op2": "html/pag2.html",
+        "op3": "html/pag3.html",
+        "op4": "html/pag4.html",
+        "op5": "html/pag5.html",
+        "op6": "html/pag6.html"
     };
 
     const contentMap = {
@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.target.tagName === "LI") {
             const selectedText = event.target.textContent;
             const selectedValue = event.target.getAttribute("data-value");
+
+            iframe.style.display = "block";
 
             // Atualiza o input com o nome da opção escolhida
             selectInput.value = selectedText;

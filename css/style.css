@@ -98,6 +98,7 @@ main {
 } 
 
 iframe {
+    display: none;
     width: 90%;
     height: 50%;
     transition: width .3s, height .3s;
