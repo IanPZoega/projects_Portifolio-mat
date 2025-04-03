@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // Se a opção selecionada tiver uma página associada
             if (pageMap[selectedValue]) {
                 iframe.src = pageMap[selectedValue]; // Atualiza o iframe
-                iframe.style.display = "block"; // Mostra o iframe
-                iframe.style.opacity = "1"; 
-                iframe.style.visibility = "visible"; 
+            //     iframe.style.display = "block"; // Mostra o iframe
+            //     iframe.style.opacity = "1"; 
+            //     iframe.style.visibility = "visible"; 
             }
 
             // Atualiza o texto do input
