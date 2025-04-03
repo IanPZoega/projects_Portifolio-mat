@@ -54,7 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const selectedText = event.target.textContent;
             const selectedValue = event.target.getAttribute("data-value");
 
-            iframe.style.display = "block";
+            iframe.style.visibility = "visible";
+            iframe.style.opacity = "1";
 
             // Atualiza o input com o nome da opção escolhida
             selectInput.value = selectedText;

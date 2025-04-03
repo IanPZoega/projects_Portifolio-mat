@@ -98,7 +98,7 @@ main {
 } 
 
 iframe {
-    display: none;
+    visibility: hidden;
     width: 90%;
     height: 50%;
     transition: width .3s, height .3s;
