@@ -62,10 +62,6 @@ body {
     outline: none;
 }
 
-/* .select-input::placeholder, .options-list > li, .select-input > li {
-    font-size: 1.1em;
-} */
-
 .options-list {
     display: none;
     position: absolute;

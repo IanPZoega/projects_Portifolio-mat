@@ -14,12 +14,20 @@ optionsList.onclick = (event) => {
     }
 };
 
-// Fechar lista ao clicar fora
-document.onclick = (event) => {
-    if (!selectInput.closest(".custom-select").contains(event.target)) {
+document.addEventListener("click", (event) => {
+    const selectWrapper = selectInput.closest(".custom-select");
+
+    if (!selectWrapper || !selectWrapper.contains(event.target)) {
         optionsList.style.display = "none";
     }
-};
+});
+
+// Fechar lista ao clicar fora
+// document.onclick = (event) => {
+//     if (!selectInput.closest(".custom-select").contains(event.target)) {
+//         optionsList.style.display = "none";
+//     }
+// };     
 
 // -----------------------------------------------------------------------------
 
