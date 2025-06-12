@@ -44,7 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "op3": "html/pag3.html",
         "op4": "html/pag4.html",
         "op5": "html/pag5.html",
-        "op6": "html/pag6.html"
+        "op6": "html/pag6.html",
+        "op7": "html/pag7.html",
+        "op8": "html/pag8.html",
+        "op9": "html/pag9.html"
     };
 
     const contentMap = {
@@ -53,7 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "op3": "<p>Logarítmo</p>",
         "op4": "<p>Sistemas de equações lineares</p>",
         "op5": "<p>Conceito de matriz</p>",
-        "op6": "<p>Operações com matrizes</p>"
+        "op6": "<p>Operações com matrizes</p>",
+        "op7": "<p>Matemática financeira</p>",
+        "op8": "<p>Figuras geométricas planas</p>",
+        "op9": "<p>Trigonometria</p>"
     };
 
     // Manipula a seleção de uma opção
